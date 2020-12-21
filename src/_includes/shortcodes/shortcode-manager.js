@@ -2,9 +2,9 @@
 // (https://gitlab.com/reubenlillie/reubenlillie.com/)
 
 // Import layout partials
-const testing = require('./shortcodes/testing.js')
+const counterComponent = require('./counter.js')
 
 module.exports = function(eleventyConfig) {
-  testing(eleventyConfig)
+  counterComponent(eleventyConfig)
   return 
 }

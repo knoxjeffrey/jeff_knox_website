@@ -9,7 +9,6 @@ module.exports = ({ data }) => html`
     <meta content="#ffffff" name="msapplication-TileColor" />
     <meta content="/favicon/ms-icon-144x144.png" name="msapplication-TileImage" />
     <title>${data.title}</title>
-    <link rel="stylesheet" href="/assets/main.css?${data.cacheBust.mainCss}" />
-    <script type="text/javascript" src="/assets/main.js?${data.cacheBust.mainJs}"></script>
+    <link rel="stylesheet" href="/assets/main.css?${data.cacheBust.mainCss}" type="text/css" />
   </head>
 `;

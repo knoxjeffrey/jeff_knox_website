@@ -4,7 +4,8 @@ const cacheBust = () => {
   // A "map" of files to cache bust
   const files = {
     mainCss: './.tmp/compiled-assets/main.css',
-    mainJs: './.tmp/compiled-assets/main.js'
+    mainJs: './.tmp/compiled-assets/main.js',
+    vendorJs: './.tmp/compiled-assets/vendor.js'
   };
   return Object.entries(files).reduce((acc, [key, path]) => {
     const now = Date.now();

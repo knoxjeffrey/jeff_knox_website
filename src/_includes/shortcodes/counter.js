@@ -1,10 +1,12 @@
 const { html } = require('htm/preact');
 const render = require('preact-render-to-string');
 
+const Counter = require(`../../components/Counter.js`);
+
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addShortcode('testing', function(data) {
+  eleventyConfig.addShortcode('counterComponent', function(data) {
     return render(html`
-      <div>testing</div>
+      <${Counter} id=${data.id}/>
     `);
   })
 }

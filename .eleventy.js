@@ -1,8 +1,8 @@
 const htmlmin = require('html-minifier');
-const manager = require('./src/_includes/manager.js')
+const shortcodeManager = require('./src/_includes/shortcodes/shortcode-manager.js')
 
 module.exports = function(eleventyConfig) {
-  manager(eleventyConfig)
+  shortcodeManager(eleventyConfig)
   
   // .gitignore the compiled asset folder will break Eleventy from watching asset. Created a 
   // .eleventyignore in the root without this folder and now don't use .gitignore
@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
   // Watch our compiled assets for changes
   eleventyConfig.addWatchTarget('./.tmp/compiled-assets/main.css');
   eleventyConfig.addWatchTarget('./.tmp/compiled-assets/main.js');
-  // eleventyConfig.addWatchTarget('./src/compiled-assets/vendor.js');
+  eleventyConfig.addWatchTarget('./.tmp/compiled-assets/vendor.js');
 
   // Copy .tmp/compiled-assets to /assets
   eleventyConfig.addPassthroughCopy({ '.tmp/compiled-assets': 'assets' });
@@ -41,11 +41,7 @@ module.exports = function(eleventyConfig) {
       layouts: '_layouts',
       output: 'dist',
     },
-    // Allows using markup and JS features in markdown
-    markdownTemplateEngine: '11ty.js',
-    templateFormats: [
-      '11ty.js',
-      'md',
-    ],
+    // Allows using markup and njk features in markdown
+    markdownTemplateEngine: 'njk',
   };
 };
