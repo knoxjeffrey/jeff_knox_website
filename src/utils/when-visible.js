@@ -1,4 +1,4 @@
-module.exports = function whenVisible($element, callback, options) {
+module.exports = ($element, callback, options) => {
   if (typeof IntersectionObserver === 'undefined') {
     callback()
     return

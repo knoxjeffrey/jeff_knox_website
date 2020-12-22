@@ -4,7 +4,7 @@
 // Import layout partials
 const counterComponent = require('./counter.js')
 
-module.exports = function(eleventyConfig) {
+module.exports = eleventyConfig => {
   counterComponent(eleventyConfig)
   return 
 }

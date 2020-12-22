@@ -5,6 +5,7 @@ const render = require('preact-render-to-string')
 const Alert = require('@components/Alert.js')
 const Button = require('@components/Button.js')
 const ButtonGroup = require('@components/ButtonGroup.js')
+const Card = require('@components/Card.js')
 
 exports.data = {
   layout: 'styleguide.11ty.js',
@@ -82,6 +83,19 @@ exports.render = data => {
             <${Button} text="Middle" type="default" ghost=true additionalClass="margin-bottom--s" />
             <${Button} text="Right" type="default" ghost=true additionalClass="margin-bottom--s" />
           <//>
+        </section>
+        <hr />
+
+        <section>
+          <header>
+            <h2 id="Cards">Cards</h2>
+          </header>
+          <${Card} 
+            title="Card Title"
+            content=${html`
+              Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
+            `}
+          />
         </section>
         <hr />
 
