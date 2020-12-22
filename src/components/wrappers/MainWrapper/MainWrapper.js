@@ -2,7 +2,7 @@ const { html } = require('htm/preact')
 
 const HeadTag = require('@components/HeadTag')
 
-module.exports = ({ children, data }) => {
+const MainWrapper = ({ children, data }) => {
   return html`
     <${HeadTag} data=${data} />
     <body class="main-wrapper">
@@ -13,3 +13,5 @@ module.exports = ({ children, data }) => {
     </body>
   `
 };
+
+module.exports = MainWrapper

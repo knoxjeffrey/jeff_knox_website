@@ -1,6 +1,6 @@
 const { html } = require('htm/preact')
 
-module.exports = ({ data }) => html`
+const HeadTag = ({ data }) => html`
   <head>
     <meta charset="utf-8" />
     <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -27,5 +27,4 @@ module.exports = ({ data }) => html`
   </head>
 `
 
-
-  
+module.exports = HeadTag

@@ -4,7 +4,7 @@ const { h } = require ('preact')
 
 const withHydration = require('./with-hydration')
 
-function Counter({ id }) {
+const Counter = ({ id }) => {
   const [count, setCount] = useState(0);
   const handleClick = (e) => {
     setCount(count + 1)
@@ -21,5 +21,5 @@ function Counter({ id }) {
   `
 }
 
-// Here we wrap the component `withHydration`.
+// Wrap the component `withHydration`.
 module.exports = withHydration(Counter)

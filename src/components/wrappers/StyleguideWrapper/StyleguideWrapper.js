@@ -9,7 +9,7 @@ const navigationData = () => {
   ]
 }
 
-module.exports = ({ data, children }) => {
+const StyleguideWrapper = ({ data, children }) => {
   return html`
     <${HeadTag} data=${data} />
     <body class="terminal">
@@ -25,3 +25,5 @@ module.exports = ({ data, children }) => {
     </body>
   `
 };
+
+module.exports = StyleguideWrapper

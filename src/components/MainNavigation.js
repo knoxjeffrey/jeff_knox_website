@@ -2,7 +2,7 @@ const { html } = require('htm/preact')
 
 const navigationLinks = require('@utils/navigation-links')
 
-module.exports = ({ data, navigationData }) => {
+const MainNavigation = ({ data, navigationData }) => {
   return html`
     <div class="terminal-nav">
       <header class="terminal-logo">
@@ -21,3 +21,4 @@ module.exports = ({ data, navigationData }) => {
   `;
 };
 
+module.exports = MainNavigation

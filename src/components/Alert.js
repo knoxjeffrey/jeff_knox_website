@@ -11,9 +11,11 @@ const typeClass = (type) => {
   }
 }
 
-module.exports = ({ data, text, type, additionalClass }) => {
+const Alert = ({ data, text, type, additionalClass }) => {
   const alertClass = `terminal-alert ${typeClass(type)} ${additionalClass}`
   return html`
     <div class="${alertClass}">${text}</div>
   `
 };
+
+module.exports = Alert

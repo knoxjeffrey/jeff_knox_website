@@ -11,7 +11,7 @@ const typeClass = (type) => {
   }
 }
 
-module.exports = ({ data, text, type, ghost, block, additionalClass }) => {
+const Button = ({ data, text, type, ghost, block, additionalClass }) => {
   const ghostClass = ghost ? "btn-ghost" : ""
   const blockClass = block ? "btn-block" : ""
   const buttonClass = `btn ${typeClass(type)} ${ghostClass} ${blockClass} ${additionalClass}`
@@ -19,3 +19,5 @@ module.exports = ({ data, text, type, ghost, block, additionalClass }) => {
     <div class="${buttonClass}">${text}</div>
   `
 };
+
+module.exports = Button

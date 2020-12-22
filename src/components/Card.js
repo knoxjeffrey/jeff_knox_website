@@ -1,6 +1,6 @@
 const { html } = require('htm/preact')
 
-module.exports = ({ data, title, content }) => {
+const Card = ({ data, title, content }) => {
   return html`
     <div class="terminal-card">
       <header>${title}</header>
@@ -8,3 +8,5 @@ module.exports = ({ data, title, content }) => {
     </div>
   `
 };
+
+module.exports = Card
