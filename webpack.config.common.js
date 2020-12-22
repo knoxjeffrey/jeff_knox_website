@@ -1,8 +1,8 @@
 // Makes Sass faster!
-const Fiber = require('fibers');
-const globImporter = require('node-sass-glob-importer');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
+const Fiber = require('fibers')
+const globImporter = require('node-sass-glob-importer')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
 module.exports = {
   // Our "entry" point
   entry: './src/assets/javascript/main.js',
@@ -68,4 +68,4 @@ module.exports = {
       filename: '[name].css',
     }),
   ],
-};
+}

@@ -1,13 +1,13 @@
-const { html } = require('htm/preact');
-const { useState } = require('preact/hooks');
-const { h } = require ('preact');
+const { html } = require('htm/preact')
+const { useState } = require('preact/hooks')
+const { h } = require ('preact')
 
-const withHydration = require('./with-hydration');
+const withHydration = require('./with-hydration')
 
 function Counter({ id }) {
   const [count, setCount] = useState(0);
   const handleClick = (e) => {
-    setCount(count + 1);
+    setCount(count + 1)
   };
 
   return html`
@@ -18,8 +18,8 @@ function Counter({ id }) {
         Click me
       </button>
     </div>
-  `;
+  `
 }
 
 // Here we wrap the component `withHydration`.
-module.exports = withHydration(Counter);
+module.exports = withHydration(Counter)
