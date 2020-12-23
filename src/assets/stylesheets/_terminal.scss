@@ -568,11 +568,19 @@ input[type="search"]:focus {
   border: 1px solid var(--font-color);
 }
 
-input[type="text"]:not(:placeholder-shown):invalid,
+/* input[type="text"]:not(:placeholder-shown):invalid,
 input[type="email"]:not(:placeholder-shown):invalid,
 input[type="password"]:not(:placeholder-shown):invalid,
 input[type="search"]:not(:placeholder-shown):invalid,
 input[type="number"]:not(:placeholder-shown):invalid {
+  border-color: var(--error-color);
+} */
+
+input[type="text"][aria-invalid='true'],
+input[type="email"][aria-invalid='true'],
+input[type="password"][aria-invalid='true'],
+input[type="search"][aria-invalid='true'],
+input[type="number"][aria-invalid='true'] {
   border-color: var(--error-color);
 }
 
@@ -586,6 +594,10 @@ input::placeholder,
 textarea::placeholder {
   color: var(--secondary-color) !important;
   opacity: 1;
+}
+
+input + p {
+  margin-bottom: 0;
 }
 
 textarea {

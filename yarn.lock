@@ -6395,6 +6395,16 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+"react-dom@npm:@preact/compat@^0.0.2", "react@npm:@preact/compat@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@preact/compat/-/compat-0.0.2.tgz#456f909ca7b98a4cc65e183b79cb6608ec9cfe5b"
+  integrity sha512-F7GL1nKO4NHVLzZg4OAMAqe0Ebt5bZ9iYS1IZEN8fxEMz2rjfpQu00TT90jc+ryH2Wo/HqY82UTlMy+PJglG9Q==
+
+react-hook-form@^6.13.1:
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.13.1.tgz#b9c0aa61f746db8169ed5e1050de21cacb1947d6"
+  integrity sha512-Q0N7MYcbA8SigYufb02h9z97ZKCpIbe62rywOTPsK4Ntvh6fRTGDXSuzWuRhLHhArLoWbGrWYSNSS4tlb+OFXg==
+
 react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"

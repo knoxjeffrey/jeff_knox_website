@@ -55,7 +55,10 @@
   "dependencies": {
     "htm": "^3.0.4",
     "preact": "^10.1.0",
-    "preact-render-to-string": "^5.1.2"
+    "preact-render-to-string": "^5.1.2",
+    "react": "npm:@preact/compat@^0.0.2",
+    "react-dom": "npm:@preact/compat@^0.0.2",
+    "react-hook-form": "^6.13.1"
   },
   "browserslist": [
     "> 1%",
@@ -64,6 +67,7 @@
   ],
   "_moduleAliases": {
     "@components": "src/components",
+    "@forms": "src/forms",
     "@utils": "src/utils"
   }
 }

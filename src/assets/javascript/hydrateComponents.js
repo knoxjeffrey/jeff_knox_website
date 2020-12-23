@@ -2,10 +2,12 @@ const { html, render } = require('htm/preact')
 const whenVisible = require('../../utils/when-visible')
 
 const Counter = require('../../components/hydrate/Counter')
+const Form = require('../../components/hydrate/Form')
 
 // List all components to be hydrated on the client
 const componentMap = {
   Counter,
+  Form
 };
 
 const componentMarkers = document.querySelectorAll(`[data-cmp-id]`)

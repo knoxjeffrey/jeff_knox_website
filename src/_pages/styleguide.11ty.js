@@ -6,6 +6,8 @@ const Alert = require('@components/Alert.js')
 const Button = require('@components/Button.js')
 const ButtonGroup = require('@components/ButtonGroup.js')
 const Card = require('@components/Card.js')
+const Figure = require('@components/Figure.js')
+const Form = require('@components//hydrate/Form.js')
 
 exports.data = {
   layout: 'styleguide.11ty.js',
@@ -96,6 +98,27 @@ exports.render = data => {
               Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
             `}
           />
+        </section>
+        <hr />
+
+        <section>
+          <header>
+            <h2 id="Figure">Image with caption</h2>
+          </header>
+          <${Figure} 
+            caption="Image with caption"
+            media="https://picsum.photos/1000/600?random&imageWithCaption"
+            alt="Image with caption"
+            title="Image with caption"
+          />
+        </section>
+        <hr />
+
+        <section>
+          <header>
+            <h2 id="Forms">Forms</h2>
+          </header>
+          <${Form} formName="StyleguideForm" />
         </section>
         <hr />
 

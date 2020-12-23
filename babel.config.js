@@ -11,8 +11,6 @@ module.exports = {
   plugins: [
     // See https://github.com/developit/htm/tree/master/packages/babel-plugin-htm
     // for configuration options.
-    ['babel-plugin-htm', {
-      import: 'preact',
-    }],
+    ['babel-plugin-htm', { import: 'preact', }],
   ],
 }
